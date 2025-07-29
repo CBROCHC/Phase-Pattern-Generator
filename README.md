@@ -26,9 +26,36 @@ A random phase is generated, and the amplitude is set uniformly.
 
 ### 3. Optimization
 The forward model uses a Fourier transform to simulate the optical propagation:
-- Complex field at the SLM: \( u = A \cdot e^{i\phi} \)
-- Image plane: \( U = |\mathcal{F}(u)| \)
+- Complex field at the SLM: u = A · exp(i·φ)
+- Image plane: U = |F(u)|
 
 The loss function minimizes the difference between the simulated amplitude and the target:
 ```python
 loss = torch.sqrt(torch.sum((U - targetA)**2))
+```
+
+### Example Outputs
+
+| Target Intensity | Recovered Phase | Reconstructed Intensity | Error Curve |
+|------------------|------------------|--------------------------|-------------|
+| ![target](target_samples/sakura.jpg) | ![phase](https://via.placeholder.com/150) | ![reconstructed](https://via.placeholder.com/150) | ![error](https://via.placeholder.com/150) |
+
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Requirements
+
+- Python 3.8+
+- [PyTorch](https://pytorch.org)
+- NumPy
+- Matplotlib
+- Pillow (PIL)
+- h5py
+
+Install dependencies with:
+
+```bash
+pip install torch numpy matplotlib pillow h5py
+```
