@@ -40,7 +40,7 @@ loss = torch.sqrt(torch.sum((U - targetA)**2))
 |------------------|------------------|--------------------------|-------------|
 | ![target](target_samples/sakura.jpg) | ![phase](results/sakura_phase.png) | ![reconstructed](results/sakura_int.png) | ![error](results/sakura_error.png) |
 | ![target](target_samples/hpk.jpg) | ![phase](results/hpk_phase.png) | ![reconstructed](results/hpk_int.png) | ![error](results/hpk_error.png) |
-| ![target](target_samples/img1.png) | ![phase](results/groc_phase.png) | ![reconstructed](groc_int.png) | ![error](groc_error.png) |
+| ![target](target_samples/img1.png) | ![phase](results/groc_phase.png) | ![reconstructed](results/groc_int.png) | ![error](results/groc_error.png) |
 
 ---
 
